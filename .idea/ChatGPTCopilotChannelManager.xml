@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChatGPTCopilotChannelManager">
+    <dynamicCommends>
+      <option value="explain" />
+      <option value="translate to chinese" />
+      <option value="translate to english" />
+      <option value="check bugs" />
+      <option value="optimize code" />
+    </dynamicCommends>
+    <chatChannels>
+      <chatChannel>
+        <option name="model" value="gpt-3.5-turbo" />
+        <option name="name" value="TextViews in the context of a graphical user interface (GUI) and specifically in Android development." />
+        <option name="messages">
+          <Message>
+            <option name="content" value="give and example of jetpack compose" />
+            <option name="id" value="f4763202-2968-45f1-9187-43216fbe9975" />
+            <option name="role" value="user" />
+          </Message>
+          <Message>
+            <option name="content" value="Sure! Here's an example of a simple Jetpack Compose app that displays a list of items:&#10;&#10;```kotlin&#10;@Composable&#10;fun MyApp(items: List&lt;String&gt;) {&#10;    Column {&#10;        Text(text = &quot;My App&quot;)&#10;        Divider()&#10;        LazyColumn {&#10;            items(items) { item -&gt;&#10;                ListItem(item)&#10;            }&#10;        }&#10;    }&#10;}&#10;&#10;@Composable&#10;fun ListItem(item: String) {&#10;    Text(text = item)&#10;    Divider()&#10;}&#10;&#10;@Preview&#10;@Composable&#10;fun PreviewMyApp() {&#10;    val items = listOf(&quot;Item 1&quot;, &quot;Item 2&quot;, &quot;Item 3&quot;)&#10;    MyApp(items)&#10;}&#10;```&#10;&#10;In this example, the `MyApp` composable function defines the layout of the app. It includes a title, a divider, and a `LazyColumn` which allows for efficient scrolling of a potentially large list of items. The `items` parameter is a list of strings that are passed in and displayed using the `ListItem` composable function.&#10;&#10;The `ListItem` composable function simply displays the text of each item in the list and adds a divider after each item.&#10;&#10;Finally, the `@Preview` annotation is used to provide a preview of the app layout in Android Studio.&#10;&#10;This example demonstrates the basic structure of a Jetpack Compose app and how to display a list of items using the `LazyColumn` component." />
+            <option name="id" value="b8d0e105-33a5-4d3f-ae7a-6eb08b3a5b51" />
+            <option name="role" value="assistant" />
+          </Message>
+        </option>
+      </chatChannel>
+    </chatChannels>
+  </component>
+</project>
